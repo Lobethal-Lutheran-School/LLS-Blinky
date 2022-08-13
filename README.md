@@ -1,14 +1,18 @@
-LLS-Blinky
+# LLS-Blinky
+
+![Image](images/Assembled-Board-v1.jpg)
 
 This repository contains the schematic, layout and gerber files for Lobethal Lutheran School's themed Blinky PCB.
 
 The Blinky project allows students to try soldering, and learn about algorithms and coding of embedded devices; in this case, an Atmel attiny13/45/85 eight pin microcontroller.
 
-Others hoping to do a similar project can use the same schematic file, and PCB layout template to design their own bespoke layout.
+Others hoping to do a similar project can use the same schematic file, and PCB layout template to design their own bespoke layout. The PCB is powered by 5V, and has a rear mounted socket for a Type B USB cable, the type commonly used for printers, scanners and often found lurking in collections of old cables.
 
-Those seeking to creat customised line art for their own version of the PCB can use https://github.com/erichVK5/inkscape2pcb to generate footprints with elements that be used on the silkscreen, copper or solder mask layers.
+Those seeking to create customised line art for their own version of the PCB can use https://github.com/erichVK5/inkscape2pcb to generate footprints with elements that be used on the silkscreen, copper or solder mask layers.
 
 The schematic and PCB layout have been designed in the Ringdove EDA suite, using sch-rnd for the schematic, pcb-rnd for PCB layout, and camv-rnd to view the exported gerber files prior to placing the order for manufacturing.
+
+![Image](images/Schematic-v1.jpg)
 
 The schematic can be modified if desired, but most trying their hand at a custom PCB can begin just with modifying the provided PCB layout in pcb-rnd which already has the netlist from the schematic loaded, and is ready for part placement. 
 
@@ -20,7 +24,9 @@ The attiny13a used in this project was programmed using the arduino programming 
 
 see: https://github.com/MCUdude/MicroCore
 
-A programmer such as an inexpensive USBasp and a zero insertion force (ZIF) socket programming fixture are ideal for programming the microcontrollers prior to insertion in the PCB.
+A programmer such as an inexpensive USBasp and a zero insertion force (ZIF) socket programming fixture are ideal for programming the microcontrollers prior to insertion in the PCB. A simple programmign fixture PCB is in development based on the following prototype:
+
+![Image](images/USBasp-and-Programmer-v1.jpg)
 
 Bill of materials:
 
