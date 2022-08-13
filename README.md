@@ -1,6 +1,6 @@
 # LLS-Blinky
 
-![Image](images/Assembled-Board-v1.jpg)
+![Image](images/Assembled-Board-v1.JPG)
 
 This repository contains the schematic, layout and gerber files for Lobethal Lutheran School's themed Blinky PCB.
 
