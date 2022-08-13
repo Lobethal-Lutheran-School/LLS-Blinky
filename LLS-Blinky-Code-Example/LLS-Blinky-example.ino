@@ -1,10 +1,28 @@
+/*
+ *
+ *   Copyright (C) 2022 Erich S. Heinzle
+ *   Website https://github.com/Lobethal-Lutheran-School/
+ *   
+ *   Lobethal Lutheran School - "Historically Grounded, Future Minded"
+ *
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License at <http://www.gnu.org/licenses/> 
+ *   for more details.
+ *
+
 #define LED5 2
 #define LED4 1
 #define LED3 0
 #define LED2 4
 #define LED1 3
 #define DELAY 300
-#define HEARTBEAT 1000
 
 void setup() {
  pinMode(0, OUTPUT);
@@ -16,26 +34,26 @@ void setup() {
 }
 
 void oscarChaser() {
- digitalWrite(LED5, HIGH);   // turn the LED on (HIGH is the voltage level)
- delay(DELAY);             // wait for a second
- digitalWrite(LED5, LOW);    // turn the LED off by making the voltage LOW
- delay(DELAY);             // wait for a second
- digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
- delay(DELAY);             // wait for a second
- digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
- delay(DELAY);             // wait for a second
- digitalWrite(LED4, HIGH);   // turn the LED on (HIGH is the voltage level)
- delay(DELAY);             // wait for a second
- digitalWrite(LED4, LOW);    // turn the LED off by making the voltage LOW
- delay(DELAY);             // wait for a second
- digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
- delay(DELAY);             // wait for a second
- digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
- delay(DELAY);             // wait for a second
- digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
- delay(DELAY);             // wait for a second
- digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
- delay(DELAY);             // wait for a second
+ digitalWrite(LED5, HIGH); // turn the LED on (HIGH is the voltage level)
+ delay(DELAY);             // wait for DELAY microseconds
+ digitalWrite(LED5, LOW); // turn the LED off (LOW is the voltage level)
+ delay(DELAY);
+ digitalWrite(LED2, HIGH);
+ delay(DELAY);
+ digitalWrite(LED2, LOW);
+ delay(DELAY);
+ digitalWrite(LED4, HIGH);
+ delay(DELAY);
+ digitalWrite(LED4, LOW);
+ delay(DELAY);
+ digitalWrite(LED1, HIGH);
+ delay(DELAY);
+ digitalWrite(LED1, LOW);
+ delay(DELAY);
+ digitalWrite(LED3, HIGH);
+ delay(DELAY);
+ digitalWrite(LED3, LOW);
+ delay(DELAY);
 
 }
 
