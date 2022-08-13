@@ -4,7 +4,7 @@
 
 This repository contains the schematic, layout and gerber files for Lobethal Lutheran School's themed Blinky PCB.
 
-The Blinky project allows students to try soldering, and learn about algorithms and coding of embedded devices; in this case, an Atmel attiny13/45/85 eight pin microcontroller.
+The Blinky project allows students to try soldering, and learn about algorithms and programming of embedded devices; in this case, an Atmel attiny13/45/85 eight pin microcontroller.
 
 ![Image](images/pcb-back.jpg)
 ![Image](images/pcb-front.jpg)
@@ -21,7 +21,9 @@ The schematic can be modified if desired, but most trying their hand at a custom
 
 see: http://www.repo.hu/projects/pcb-rnd
 
-PCBs can be easily and cheaply ordered online in quantities of ten, up to 100mm x 100mm, making a project of this kind an ideal introduction to electronic design and coding using open source toolchains throughout.
+PCBs can be easily and cheaply ordered online in quantities of ten, up to 100mm x 100mm, making a project of this kind an ideal introduction to electronic design and coding using open source toolchains throughout. Yellow solder mask was used for this board to reflect the school colours, but other colours such as green, black, blue, and red are also available.
+
+Those etching or routing PCBs at home can use the CAM (computer aided manufacturing) files exported by pcb-rnd for routing, toner transfer or photresist processes.
 
 The attiny13a used in this project was programmed using the arduino programming environment and extensions from MCUdude available on github
 
