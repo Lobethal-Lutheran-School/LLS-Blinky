@@ -6,6 +6,9 @@ This repository contains the schematic, layout and gerber files for Lobethal Lut
 
 The Blinky project allows students to try soldering, and learn about algorithms and coding of embedded devices; in this case, an Atmel attiny13/45/85 eight pin microcontroller.
 
+![Image](images/pcb-back.jpg)
+![Image](images/pcb-front.jpg)
+
 Others hoping to do a similar project can use the same schematic file, and PCB layout template to design their own bespoke layout. The PCB is powered by 5V, and has a rear mounted socket for a Type B USB cable, the type commonly used for printers, scanners and often found lurking in collections of old cables.
 
 Those seeking to create customised line art for their own version of the PCB can use https://github.com/erichVK5/inkscape2pcb to generate footprints with elements that be used on the silkscreen, copper or solder mask layers.
