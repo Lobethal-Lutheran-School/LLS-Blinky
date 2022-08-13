@@ -38,6 +38,7 @@ Bill of materials:
 - 180 degree vertical through hole Type B USB socket
 - 8 pin DIP socket
 - 8 pin Atmel microcontroller, i.e. attiny13a, attiny45 or attinty85
+- 100nF decoupling capacitor; monolithic, polypropylene or ceramic
 
 Optional (for jumper selection of one of four flashing modes)
 
