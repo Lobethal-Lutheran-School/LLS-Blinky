@@ -11,7 +11,7 @@ The Blinky project allows students to try soldering, and learn about algorithms 
 
 Others hoping to do a similar project can use the same schematic file, and PCB layout template to design their own bespoke layout. The PCB is powered by 5V, and has a rear mounted socket for a Type B USB cable, the type commonly used for printers, scanners and often found lurking in collections of old cables.
 
-Those seeking to create customised line art for their own version of the PCB can use https://github.com/erichVK5/inkscape2pcb to generate footprints with elements that be used on the silkscreen, copper or solder mask layers.
+Those seeking to create customised line art for their own version of the PCB can use https://github.com/erichVK5/inkscape2pcb to generate footprints with elements that can be used on the silkscreen, copper or solder mask layers.
 
 The schematic and PCB layout have been designed in the Ringdove EDA suite, using sch-rnd for the schematic, pcb-rnd for PCB layout, and camv-rnd to view the exported gerber files prior to placing the order for manufacturing.
 
