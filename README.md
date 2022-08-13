@@ -8,6 +8,14 @@ Others hoping to do a similar project can use the same schematic file, and PCB l
 
 Those seeking to creat customised line art for their own version of the PCB can use https://github.com/erichVK5/inkscape2pcb to generate footprints with elements that be used on the silkscreen, copper or solder mask layers.
 
+The schematic and PCB layout have been designed in the Ringdove EDA suite, using sch-rnd for the schematic, pcb-rnd for PCB layout, and camv-rnd to view the exported gerber files prior to placing the order for manufacturing.
+
+The schematic can be modified if desired, but most trying their hand at a custom PCB can begin just with modifying the provided PCB layout in pcb-rnd which already has the netlist from the schematic loaded, and is ready for part placement. 
+
+see: http://www.repo.hu/projects/pcb-rnd
+
+PCBs can be easily and cheaply ordered online in quantities of ten, up to 100mm x 100mm, making a project of this kind an ideal introduction to electronic design and coding using open source toolchains throughout.
+
 The attiny13a used in this project was programmed using the arduino programming environment and extensions from MCUdude available on github
 
 see: https://github.com/MCUdude/MicroCore
