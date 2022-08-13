@@ -17,13 +17,13 @@ The schematic and PCB layout have been designed in the Ringdove EDA suite, using
 
 ![Image](images/Schematic-v1.jpg)
 
-The schematic can be modified if desired, but most trying their hand at a custom PCB can begin just with modifying the provided PCB layout in pcb-rnd which already has the netlist from the schematic loaded, and is ready for part placement. 
+The schematic can be modified if desired, but most trying their hand at a custom PCB can begin just with modifying the provided PCB layout template (LLS-Blinky-Template-v1.rp) in pcb-rnd which already has the netlist from the schematic loaded, and is ready for part placement and routing.
 
 see: http://www.repo.hu/projects/pcb-rnd
 
 PCBs can be easily and cheaply ordered online in quantities of ten, up to 100mm x 100mm, making a project of this kind an ideal introduction to electronic design and coding using open source toolchains throughout. Yellow solder mask was used for this board to reflect the school colours, but other colours such as green, black, blue, and red are also available.
 
-Those etching or routing PCBs at home can use the CAM (computer aided manufacturing) files exported by pcb-rnd for routing, toner transfer or photresist processes.
+Those etching or routing PCBs at home can use the various file formats exported by pcb-rnd for routing, toner transfer or photoresist processes.
 
 The attiny13a used in this project was programmed using the arduino programming environment and extensions from MCUdude available on github
 
