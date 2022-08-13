@@ -16,6 +16,7 @@
  *   GNU General Public License at <http://www.gnu.org/licenses/> 
  *   for more details.
  *
+ */
 
 #define LED5 2
 #define LED4 1
@@ -33,6 +34,8 @@ void setup() {
  pinMode(5, INPUT);
 }
 
+// a routine that cycles through the LEDs one at a time
+// moving to the next LED after DELAY microseconds
 void oscarChaser() {
  digitalWrite(LED5, HIGH); // turn the LED on (HIGH is the voltage level)
  delay(DELAY);             // wait for DELAY microseconds
@@ -57,6 +60,8 @@ void oscarChaser() {
 
 }
 
+// a routine that keeps the LED on 'tenths' microseconds every ten microseconds
+// to achieve 10 steps in the level of brightness for all LEDS 
 void LEDbrightness(int tenths) {
   digitalWrite(LED1, HIGH);
   digitalWrite(LED2, HIGH);
@@ -72,6 +77,7 @@ void LEDbrightness(int tenths) {
   delay(10-tenths);
 }
 
+// a routine that ramps the LED brightness up, then down repeatedly
 void oscarPulse() {
   int i, j;
   for (i = 1; i <= 10; i++) {
@@ -86,6 +92,8 @@ void oscarPulse() {
   }
 }
 
+// the main loop which calls the LED lighting code
+// TODO add code to sense which of four routines has been selected by jumper
 void loop() {
   oscarPulse();
 }
