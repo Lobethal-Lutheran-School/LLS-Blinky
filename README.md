@@ -30,11 +30,13 @@ A programmer such as an inexpensive USBasp and a zero insertion force (ZIF) sock
 
 Bill of materials:
 
-5 x 3mm white LED
-5 x 100 ohm resistors for curremt limiting of white LEDs
-4 x 10k resistors
-180 degree vertical through hole Type B USB socket
-8 pin DIP socket
-8 pin Atmel microcontroller, i.e. attiny13a, attiny45 or attinty85
+- 5 x 3mm white LED
+- 5 x 100 ohm resistors for curremt limiting of white LEDs
+- 4 x 10k resistors
+- 180 degree vertical through hole Type B USB socket
+- 8 pin DIP socket
+- 8 pin Atmel microcontroller, i.e. attiny13a, attiny45 or attinty85
+
+All of these components can be purchased in quantity quite inexpensively.
 
 A soldering iron and solder will be needed to assemble the board.
