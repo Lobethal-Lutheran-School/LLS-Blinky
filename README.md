@@ -15,7 +15,7 @@ Those seeking to create customised line art for their own version of the PCB can
 
 The schematic and PCB layout have been designed in the Ringdove EDA suite, using sch-rnd for the schematic, pcb-rnd for PCB layout, and camv-rnd to view the exported gerber files prior to placing the order for manufacturing.
 
-![Image](images/Schematic-v1.png)
+![Image](images/Schematic-v1.svg)
 
 The schematic can be modified if desired, but most trying their hand at a custom PCB can begin just with modifying the provided PCB layout template (LLS-Blinky-Template-v1.rp) in pcb-rnd which already has the netlist from the schematic loaded, and is ready for part placement and routing.
 
