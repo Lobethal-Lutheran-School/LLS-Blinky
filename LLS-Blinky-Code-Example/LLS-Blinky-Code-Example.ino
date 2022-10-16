@@ -18,6 +18,8 @@
  *
  */
 
+// the code has been uploaded using a USB-ASP programmer 
+// and the "USB-ASP slow (Microcore)" setting in the arduino IDE
 
 // here we define the commonly used things as more easily parsed labels
 #define LED5 2
@@ -27,6 +29,9 @@
 #define LED1 3
 #define DELAY 300
 
+// microcore does not recognise analogread digital pin nomenclature
+#define PROG A0
+
 // here we set up the relevant pins for input and output
 void setup() {
  pinMode(0, OUTPUT);
@@ -35,6 +40,23 @@ void setup() {
  pinMode(3, OUTPUT);
  pinMode(4, OUTPUT);
  pinMode(5, INPUT);
+}
+
+// a routine that cycles from the inner LED
+// to the outer ring of LEDs after DELAY microseconds
+void innerOuter() {
+ digitalWrite(LED5, HIGH); // turn the LED on (HIGH is the voltage level)
+ digitalWrite(LED2, HIGH);
+ digitalWrite(LED1, HIGH);
+ digitalWrite(LED3, HIGH);
+ delay(DELAY);
+ digitalWrite(LED5, LOW);
+ digitalWrite(LED2, LOW);
+ digitalWrite(LED1, LOW);
+ digitalWrite(LED3, LOW);
+ digitalWrite(LED4, HIGH);
+ delay(DELAY);
+ digitalWrite(LED4, LOW);
 }
 
 // a routine that cycles through the LEDs one at a time
@@ -95,17 +117,38 @@ void oscarPulse() {
   }
 }
 
+// this routine returns a number 1,2 or 3, depending
+// on which of the top three jumpers is selected.
+// NB, the lower jumper will put the MCU into reset unless a
+// value for R4 is chosen that is at least three times
+// that of R1-R3. The if/then/else code would then need
+// to be modified to refine the thresholds and add the
+// additional return option 
+int getJumperOption() {
+  int progval = analogRead(A0);
+  if (progval > 900) {
+    return 1;
+  } else if (progval > 800) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
+
 // you can add more routines here, limited only by your imagination
 // and the available memory in your microcontroller
 
-
-// a routine which senses which jumper selectable LED routine has been selected 
-int senseChoice() {
-  // TODO: write code to sense jumper selection of routine
-  return 0;
-}
-
 // the main loop which calls the LED lighting code
 void loop() {
-  oscarPulse();
+  switch (getJumperOption()) {
+    case 1:
+      oscarPulse();
+      break;
+    case 2:
+      innerOuter();
+      break;
+    case 3:
+      oscarChaser();
+      break;
+  }
 }
