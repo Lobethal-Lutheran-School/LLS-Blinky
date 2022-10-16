@@ -85,6 +85,30 @@ void oscarChaser() {
 
 }
 
+// a different LED chasing sequence by Blake
+void blakeChaser() {
+ digitalWrite(LED1, HIGH); // turn the LED on (HIGH is the voltage level)
+ delay(DELAY);             // wait for DELAY microseconds
+ digitalWrite(LED1, LOW); // turn the LED off (LOW is the voltage level)
+ delay(DELAY);
+ digitalWrite(LED3, HIGH);
+ delay(DELAY);
+ digitalWrite(LED3, LOW);
+ delay(DELAY);
+ digitalWrite(LED4, HIGH);
+ delay(DELAY);
+ digitalWrite(LED4, LOW);
+ delay(DELAY);
+ digitalWrite(LED5, HIGH);
+ delay(DELAY);
+ digitalWrite(LED5, LOW);
+ delay(DELAY);
+ digitalWrite(LED2, HIGH);
+ delay(DELAY);
+ digitalWrite(LED2, LOW);
+ delay(DELAY);
+}
+
 // a routine that keeps the LED on 'tenths' microseconds every ten microseconds
 // to achieve 10 steps in the level of brightness for all LEDS 
 void LEDbrightness(int tenths) {
